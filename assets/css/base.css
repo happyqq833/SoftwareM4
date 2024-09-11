@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root{
+   --font: "DM Sans", sans-serif;
+   
+   --color-one: #1b2026;
+   --color-two: #efefef;
+   --color-text-one: #1b2026;
+   --color-text-two: #777a80;
+}
+
+body{
+    font-family: var(--font);
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .section-two .inner-wrap{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    /* .section-two .inner-wrap, .section-three .inner-wrap,.section-four .inner-wrap, .section-five .inner-wrap, .section-six .inner-wrap, .section-seven .inner-content{
+        flex-direction: column;
+
+    } */
+    .section-six .inner-box{
+        width:50%;
+    }
+    
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
